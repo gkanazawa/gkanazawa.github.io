@@ -1,0 +1,525 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "New York City",
+        "desc": "New York, NY",
+        "Est. Population 2019": "8,419,000",
+        "Overall Homeless, 2019": "78,604",
+        "Homeless % of Population 2019": "0.93%",
+        "Overall Homeless, 2018": "78,676",
+        "Overall Homeless, 2017": "76,501",
+        "Overall Homeless, 2016": "73,523",
+        "Overall Homeless, 2015": "75,323",
+        "Overall Homeless, 2014": "67,810",
+        "Overall Homeless, 2013": "64,060",
+        "Overall Homeless, 2012": "56,672",
+        "Overall Homeless, 2011": "51,123",
+        "Overall Homeless, 2010": "53,187"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.0072327,
+          40.713047
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Los Angeles",
+        "desc": "Los Angeles, CA",
+        "Est. Population 2019": "3,967,000",
+        "Overall Homeless, 2019": "56,257",
+        "Homeless % of Population 2019": "1.42%",
+        "Overall Homeless, 2018": "49,955",
+        "Overall Homeless, 2017": "52,442",
+        "Overall Homeless, 2016": "43,854",
+        "Overall Homeless, 2015": "41,174",
+        "Overall Homeless, 2014": "34,393",
+        "Overall Homeless, 2013": "35,524",
+        "Overall Homeless, 2012": "31,553",
+        "Overall Homeless, 2011": "34,622",
+        "Overall Homeless, 2010": "33,243"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.2433472,
+          34.0522385
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Chicago",
+        "desc": "Chicago, IL",
+        "Est. Population 2019": "2,710,000",
+        "Overall Homeless, 2019": "5,290",
+        "Homeless % of Population 2019": "0.20%",
+        "Overall Homeless, 2018": "5,450",
+        "Overall Homeless, 2017": "5,657",
+        "Overall Homeless, 2016": "5,889",
+        "Overall Homeless, 2015": "6,786",
+        "Overall Homeless, 2014": "6,287",
+        "Overall Homeless, 2013": "6,276",
+        "Overall Homeless, 2012": "6,710",
+        "Overall Homeless, 2011": "6,635",
+        "Overall Homeless, 2010": "6,240"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.6324005,
+          41.8832283
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Houston",
+        "desc": "Houston, TX",
+        "Est. Population 2019": "2,310,000",
+        "Overall Homeless, 2019": "3,938",
+        "Homeless % of Population 2019": "0.17%",
+        "Overall Homeless, 2018": "4,143",
+        "Overall Homeless, 2017": "3,605",
+        "Overall Homeless, 2016": "4,031",
+        "Overall Homeless, 2015": "4,609",
+        "Overall Homeless, 2014": "5,308",
+        "Overall Homeless, 2013": "6,359",
+        "Overall Homeless, 2012": "7,187",
+        "Overall Homeless, 2011": "8,471",
+        "Overall Homeless, 2010": "6,368"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.3695068,
+          29.7608032
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Philadelphia",
+        "desc": "Philadelphia, PA",
+        "Est. Population 2019": "1,579,000",
+        "Overall Homeless, 2019": "5,735",
+        "Homeless % of Population 2019": "0.36%",
+        "Overall Homeless, 2018": "5,788",
+        "Overall Homeless, 2017": "5,693",
+        "Overall Homeless, 2016": "6,112",
+        "Overall Homeless, 2015": "5,998",
+        "Overall Homeless, 2014": "5,738",
+        "Overall Homeless, 2013": "5,645",
+        "Overall Homeless, 2012": "5,780",
+        "Overall Homeless, 2011": "6,180",
+        "Overall Homeless, 2010": "6,084"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.1656189,
+          39.9510612
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Phoenix",
+        "desc": "Phoenix, AZ",
+        "Est. Population 2019": "1,633,000",
+        "Overall Homeless, 2019": "6,614",
+        "Homeless % of Population 2019": "0.41%",
+        "Overall Homeless, 2018": "6,298",
+        "Overall Homeless, 2017": "5,605",
+        "Overall Homeless, 2016": "5,702",
+        "Overall Homeless, 2015": "5,631",
+        "Overall Homeless, 2014": "5,918",
+        "Overall Homeless, 2013": "5,889",
+        "Overall Homeless, 2012": "6,485",
+        "Overall Homeless, 2011": "5,831",
+        "Overall Homeless, 2010": "6,999"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.0725861,
+          33.448204
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "San Antonio",
+        "desc": "San Antonio, TX",
+        "Est. Population 2019": "1,508,000",
+        "Overall Homeless, 2019": "2,872",
+        "Homeless % of Population 2019": "0.19%",
+        "Overall Homeless, 2018": "3,066",
+        "Overall Homeless, 2017": "2,743",
+        "Overall Homeless, 2016": "2,781",
+        "Overall Homeless, 2015": "2,891",
+        "Overall Homeless, 2014": "2,892",
+        "Overall Homeless, 2013": "2,980",
+        "Overall Homeless, 2012": "3,670",
+        "Overall Homeless, 2011": "3,222",
+        "Overall Homeless, 2010": "3,291"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -98.4946136,
+          29.4251709
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "San Diego",
+        "desc": "San Diego, CA",
+        "Est. Population 2019": "1,410,000",
+        "Overall Homeless, 2019": "8,102",
+        "Homeless % of Population 2019": "0.57%",
+        "Overall Homeless, 2018": "8,576",
+        "Overall Homeless, 2017": "9,160",
+        "Overall Homeless, 2016": "8,669",
+        "Overall Homeless, 2015": "8,742",
+        "Overall Homeless, 2014": "8,506",
+        "Overall Homeless, 2013": "8,879",
+        "Overall Homeless, 2012": "10,013",
+        "Overall Homeless, 2011": "9,436",
+        "Overall Homeless, 2010": "8,383"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.1638184,
+          32.7157593
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Dallas",
+        "desc": "Dallas, TX",
+        "Est. Population 2019": "1,331,000",
+        "Overall Homeless, 2019": "4,538",
+        "Homeless % of Population 2019": "0.34%",
+        "Overall Homeless, 2018": "4,121",
+        "Overall Homeless, 2017": "3,789",
+        "Overall Homeless, 2016": "3,810",
+        "Overall Homeless, 2015": "3,141",
+        "Overall Homeless, 2014": "3,514",
+        "Overall Homeless, 2013": "3,163",
+        "Overall Homeless, 2012": "3,447",
+        "Overall Homeless, 2011": "3,540",
+        "Overall Homeless, 2010": "3,710"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.7962112,
+          32.777977
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "San Jose",
+        "desc": "San Jose, CA",
+        "Est. Population 2019": "1,028,000",
+        "Overall Homeless, 2019": "9,706",
+        "Homeless % of Population 2019": "0.94%",
+        "Overall Homeless, 2018": "7,254",
+        "Overall Homeless, 2017": "7,394",
+        "Overall Homeless, 2016": "6,524",
+        "Overall Homeless, 2015": "6,556",
+        "Overall Homeless, 2014": "7,567",
+        "Overall Homeless, 2013": "7,631",
+        "Overall Homeless, 2012": "7,053",
+        "Overall Homeless, 2011": "7,067",
+        "Overall Homeless, 2010": "7,086"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.8881454,
+          37.3347931
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Austin",
+        "desc": "Austin, TX",
+        "Est. Population 2019": 950807,
+        "Overall Homeless, 2019": "2,255",
+        "Homeless % of Population 2019": "0.24%",
+        "Overall Homeless, 2018": "2,147",
+        "Overall Homeless, 2017": "2,036",
+        "Overall Homeless, 2016": "2,138",
+        "Overall Homeless, 2015": "1,832",
+        "Overall Homeless, 2014": "1,987",
+        "Overall Homeless, 2013": "2,090",
+        "Overall Homeless, 2012": "2,244",
+        "Overall Homeless, 2011": "2,362",
+        "Overall Homeless, 2010": "2,087"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.7465973,
+          30.2649784
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Jacksonville",
+        "desc": "Jacksonville, FL",
+        "Est. Population 2019": 890467,
+        "Overall Homeless, 2019": "1,654",
+        "Homeless % of Population 2019": "0.19%",
+        "Overall Homeless, 2018": "1,794",
+        "Overall Homeless, 2017": "1,869",
+        "Overall Homeless, 2016": "1,959",
+        "Overall Homeless, 2015": "1,853",
+        "Overall Homeless, 2014": "2,049",
+        "Overall Homeless, 2013": "2,768",
+        "Overall Homeless, 2012": "2,861",
+        "Overall Homeless, 2011": "3,025",
+        "Overall Homeless, 2010": "3,241"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.6567612,
+          30.3259678
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "San Francisco",
+        "desc": "San Francisco, CA",
+        "Est. Population 2019": 874961,
+        "Overall Homeless, 2019": "8,035",
+        "Homeless % of Population 2019": "0.92%",
+        "Overall Homeless, 2018": "6,857",
+        "Overall Homeless, 2017": "6,858",
+        "Overall Homeless, 2016": "6,996",
+        "Overall Homeless, 2015": "6,775",
+        "Overall Homeless, 2014": "6,408",
+        "Overall Homeless, 2013": "7,008",
+        "Overall Homeless, 2012": "5,895",
+        "Overall Homeless, 2011": "5,669",
+        "Overall Homeless, 2010": "5,823"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.4201584,
+          37.7800789
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Indianapolis",
+        "desc": "Indianapolis, IN",
+        "Est. Population 2019": 864447,
+        "Overall Homeless, 2019": "1,567",
+        "Homeless % of Population 2019": "0.18%",
+        "Overall Homeless, 2018": "1,682",
+        "Overall Homeless, 2017": "1,783",
+        "Overall Homeless, 2016": "1,619",
+        "Overall Homeless, 2015": "1,666",
+        "Overall Homeless, 2014": "1,890",
+        "Overall Homeless, 2013": "1,599",
+        "Overall Homeless, 2012": "1,647",
+        "Overall Homeless, 2011": "1,587",
+        "Overall Homeless, 2010": "1,494"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -86.1562119,
+          39.7684517
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Columbus",
+        "desc": "Columbus, OH",
+        "Est. Population 2019": 878553,
+        "Overall Homeless, 2019": "1,907",
+        "Homeless % of Population 2019": "0.22%",
+        "Overall Homeless, 2018": "1,807",
+        "Overall Homeless, 2017": "1,691",
+        "Overall Homeless, 2016": "1,724",
+        "Overall Homeless, 2015": "1,721",
+        "Overall Homeless, 2014": "1,614",
+        "Overall Homeless, 2013": "1,488",
+        "Overall Homeless, 2012": "1,434",
+        "Overall Homeless, 2011": "1,418",
+        "Overall Homeless, 2010": "1,387"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.9962921,
+          39.9627609
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fort Worth",
+        "desc": "Fort Worth, TX",
+        "Est. Population 2019": 874401,
+        "Overall Homeless, 2019": "2,028",
+        "Homeless % of Population 2019": "0.23%",
+        "Overall Homeless, 2018": "2,015",
+        "Overall Homeless, 2017": "1,941",
+        "Overall Homeless, 2016": "1,938",
+        "Overall Homeless, 2015": "1,914",
+        "Overall Homeless, 2014": "2,425",
+        "Overall Homeless, 2013": "2,390",
+        "Overall Homeless, 2012": "2,123",
+        "Overall Homeless, 2011": "2,169",
+        "Overall Homeless, 2010": "2,181"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.3303375,
+          32.7499046
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Charlotte",
+        "desc": "Charlotte, NC",
+        "Est. Population 2019": 857425,
+        "Overall Homeless, 2019": "1,742",
+        "Homeless % of Population 2019": "0.20%",
+        "Overall Homeless, 2018": "1,668",
+        "Overall Homeless, 2017": "1,476",
+        "Overall Homeless, 2016": "1,818",
+        "Overall Homeless, 2015": "2,001",
+        "Overall Homeless, 2014": "2,014",
+        "Overall Homeless, 2013": "2,418",
+        "Overall Homeless, 2012": "2,567",
+        "Overall Homeless, 2011": "2,847",
+        "Overall Homeless, 2010": "2,841"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.8411407,
+          35.2237854
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Seattle",
+        "desc": "Seattle, WA",
+        "Est. Population 2019": 724305,
+        "Overall Homeless, 2019": "11,199",
+        "Homeless % of Population 2019": "1.55%",
+        "Overall Homeless, 2018": "12,112",
+        "Overall Homeless, 2017": "11,643",
+        "Overall Homeless, 2016": "10,730",
+        "Overall Homeless, 2015": "10,122",
+        "Overall Homeless, 2014": "8,949",
+        "Overall Homeless, 2013": "9,106",
+        "Overall Homeless, 2012": "8,899",
+        "Overall Homeless, 2011": "8,972",
+        "Overall Homeless, 2010": "9,022"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.3302765,
+          47.6032295
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Denver",
+        "desc": "Denver, CO",
+        "Est. Population 2019": 705576,
+        "Overall Homeless, 2019": "5,755",
+        "Homeless % of Population 2019": "0.82%",
+        "Overall Homeless, 2018": "5,317",
+        "Overall Homeless, 2017": "5,506",
+        "Overall Homeless, 2016": "5,728",
+        "Overall Homeless, 2015": "5,335",
+        "Overall Homeless, 2014": "6,621",
+        "Overall Homeless, 2013": "6,316",
+        "Overall Homeless, 2012": "6,358",
+        "Overall Homeless, 2011": "4,809",
+        "Overall Homeless, 2010": "8,752"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.9848557,
+          39.7384529
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "El Paso",
+        "desc": "El Paso, TX",
+        "Est. Population 2019": 679813,
+        "Overall Homeless, 2019": 809,
+        "Homeless % of Population 2019": "0.12%",
+        "Overall Homeless, 2018": 892,
+        "Overall Homeless, 2017": "1,193",
+        "Overall Homeless, 2016": "1,100",
+        "Overall Homeless, 2015": "1,107",
+        "Overall Homeless, 2014": "1,260",
+        "Overall Homeless, 2013": "1,217",
+        "Overall Homeless, 2012": "1,236",
+        "Overall Homeless, 2011": "1,331",
+        "Overall Homeless, 2010": "1,260"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -106.4922943,
+          31.760107
+        ]
+      }
+    }
+  ]
+}

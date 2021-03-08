@@ -1,0 +1,84 @@
+body {
+  font-family: sans-serif;
+}
+
+#backward {
+  float: left;
+}
+
+#forward {
+  float: right;
+}
+
+#wrapper {
+  margin: 15px auto;
+}
+
+.range-slider {
+    width: 200px;
+}
+
+#map {
+  height: 600px;
+  width: 80%;
+  display: inline-block;
+}
+
+.legend {
+   		padding: 6px 10px;
+    		font: 14px/16px Arial, Helvetica, sans-serif;
+   		background: white;
+    		background: rgba(255,255,255,0.8);
+    		box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    		border-radius: 5px;
+	}
+
+#temporal-legend {
+  padding: 6px 10px;
+    font: 14px/16px Arial, Helvetica, sans-serif;
+  background: white;
+    background: rgba(255,255,255,0.8);
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
+
+#legendTitle {
+	  	text-align: center;
+ 	 	margin-bottom: 10px;
+ 		font-variant: small-caps;
+    word-wrap: break-word;
+    width: 100px;
+}
+
+h2 {
+  font-size: 2.5rem;
+  padding-top: 140px;
+  text-align: center;
+}
+
+#panel {
+  width: 300px;
+  height: 30px;
+  background-color: rgba(255,255,255,0.8);
+  padding: 12px;
+  line-height: 35px;
+  text-align: center;
+  border: solid gray 1px;
+}
+
+
+
+	.symbolsContainer {
+    		float: left;
+		margin-left: 50px;
+	}
+	.legendCircle {
+     	border-radius:50%;
+     	border: 1px solid #537898;
+     	background: rgba(113, 133, 152, .6);
+	 	display: inline-block;
+	}
+	.legendValue {
+    		position: absolute;
+    		right: 8px;
+	}
