@@ -1,38 +1,20 @@
 // Instantiate Leaflet
 function createMap() {
 	//create map
-	var map = L.map('map', {
+	const map = L.map('map', {
 		center: [37.8, -96],
 		zoom: 4
 	});
 
 	// Add OSM base tile layer
-	var OpenStreetMap_Mapnik = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+	const OpenStreetMap_Mapnik = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 		maxZoom: 19,
 		attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 	});
 	OpenStreetMap_Mapnik.addTo(map);
 
-	function searchByAjax(text, callResponse)//callback for 3rd party ajax requests
-	{
-		return $.ajax({
-			url: 'js/citypoints1.js',	//read comments in search.php for more information usage
-			type: 'GET',
-			data: {q: text},
-			dataType: 'json',
-			success: function(json) {
-				callResponse(json);
-			}
-		});
-	}
-
-	var searchLayer = L.layerGroup().addTo(map);
-	//... adding data in searchLayer ...
-	map.addControl( new L.Control.Search({layer: searchLayer}) );
-	//searchLayer is a L.LayerGroup contains searched markers
-
 	getData(map);
-};
+}; // end createMap()
 
 // Retrieve data and place in map
 function getData(map) {
@@ -46,32 +28,32 @@ function getData(map) {
 			createLegend(map, attributes);
 		}
 	});
-};
+}; // end getData()
 
 function processData(homeless) {
 
-	var attributes = [];
-	var properties = homeless.features[1].properties;
-	for (var attribute in properties){
+	let attributes = [];
+	let properties = homeless.features[1].properties;
+	for (let attribute in properties){
 		// only select attrs with homeless percentages
 		if (attribute.indexOf("20") > -1){
 			attributes.push(attribute);
 		};
 	};
-
+	// console.log(attributes);
 	// array of attributes from 2010 to 2019
 	return attributes;
-};
+}; // end processData()
 
 function createPropSymbols(homeless, map, attributes){
 
-	var geoJson = L.geoJson(homeless, {
+	L.geoJson(homeless, {
 		pointToLayer: function(feature, latlng) {
 			return pointToLayer(feature, latlng, attributes);
 		}
 	}).addTo(map);
 
-};
+}; //end createPropSymbols()
 
 function onEachFeature(feature, layer) {
 	// Create HTML string with properties
@@ -125,7 +107,7 @@ function createSliderUI(map, attributes) {
 	$('.range-slider').attr({
 		max: 9,
 		min: 0,
-		value: String(attributes[0]),
+		value: 0,
 		step: 1
 	});
 
@@ -157,8 +139,6 @@ function createSliderUI(map, attributes) {
 						index = index < 0 ? 9 : index;
 					};
 
-					console.log(index);
-
 					$('.range-slider').val(index);
 					updatePropSymbols(map, attributes[index]);
 				});
@@ -180,7 +160,7 @@ function updateLegend(map, attribute){
 
 	var year = attribute.split("_")[0];
 	var content = "Percent homeless in " + year;
-	$('temporal-legend').html(content);
+	$('#temporal-legend').html(content);
 
 	var circleValues = getCircleValues(map, attribute);
 
@@ -210,7 +190,7 @@ function createLegend(map, attributes){
 						var container = L.DomUtil.create('div', 'legend-container');
 						$(container).append('<div id="temporal-legend">')
 
-						var svg = '<svg id="attribute-legend" width="150px" height="63px">';
+						var svg = '<svg id="attribute-legend" width="160px" height="90px">';
 
 						var circles = {
 							max: 20,
@@ -219,9 +199,9 @@ function createLegend(map, attributes){
 						};
 
 						//loop to add each circle and text to svg string
-        		for (var circle in circles){
-	            //circle string
-	            svg += '<circle class="legend-circle" id="' + circle + '" fill="#F47821" fill-opacity="0.8" stroke="#000000" cx="30"/>';
+						for (var circle in circles){
+						//circle string
+							svg += '<circle class="legend-circle" id="' + circle + '" fill="#F47821" fill-opacity="0.8" stroke="#000000" cx="30"/>';
 
 							svg += '<text id="' + circle + '-text" x="65" y="' + circles[circle] + '"></text>';
 						};
@@ -278,12 +258,11 @@ function pointToLayer(feature, latlng, attributes) {
 
 	// Create marker options
 	var gjMarkerOptions = {
-		radius: 8,
-  	fillColor: "#ff7800",
-    color: "#000",
-    weight: 1,
-    opacity: 1,
-    fillOpacity: 0.8
+		fillColor: "#ff7800",
+		color: "#000",
+		weight: 1,
+		opacity: 1,
+		fillOpacity: 0.8
 	};
 
 	var attValue = Number(feature.properties[attribute]);
@@ -292,12 +271,23 @@ function pointToLayer(feature, latlng, attributes) {
 
 	var layer = L.circleMarker(latlng, gjMarkerOptions);
 
-	var popupContent = "<p><b>City:</b> " + feature.properties.name + "</p><p><b>% Pop Homeless in " +
-		attribute + ":</b> " + round(feature.properties[attribute], 2) + "%</p>";
+	var popupContent = "<p><b>City: </b>" + feature.properties.name + "</p>";
+	
+	popupContent += "<p><b>% Pop Homeless in " + attribute + ":</b> " + round(feature.properties[attribute], 2) + "%</p>";
 
 	layer.bindPopup(popupContent);
 
+	// add event listeners to open popup on hover
+	layer.on({
+		mouseover: function(){
+			this.openPopup();
+		},
+		mouseout: function(){
+			this.closePopup();
+		}
+	});
+
 	return layer;
-}
+} // end pointToLayer()
 
 $(document).ready(createMap);
